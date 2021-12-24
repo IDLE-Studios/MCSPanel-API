@@ -1,0 +1,19 @@
+name: McsPanel-API
+version: '${project.version}'
+main: top.idlestudios.mcspanel.McsPanel
+api-version: 1.18
+prefix: McsPanel-API
+authors: [ McsPanel_Project ]
+description: 图形化服务器面板
+commands:
+  mcpanel:
+    usage: /mcspanel
+    description: 玩家或服务端使用的McPanel命令
+    permission: mcpanel.normal
+    permission-message: 无权调用McPanel命令
+
+  mcpanel-gui:
+    usage: /mcspanel-gui <mode>
+    description: 供McPanel GUI调用
+    permission: mcpanel.gui
+    permission-message: Server only!
